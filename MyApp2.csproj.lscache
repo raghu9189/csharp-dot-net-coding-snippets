@@ -54,6 +54,10 @@ TemporaryDependencyNodeTargetIdentifier=net10.0
 /warnaserror+:NU1605,SYSLIB0011
 
 [sourceFiles]
+Basics/
+ DataTypeMethods.cs
+ Datatypes.cs
+ ListDataStructures.cs
 Bird.cs
 MyArrays.cs
 MyClass.cs
@@ -61,6 +65,7 @@ obj/Debug/net10.0/
  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
  MyApp2.AssemblyInfo.cs
  MyApp2.GlobalUsings.g.cs
+OOPs/Polymorphism/MethodOverriding.cs
 PrimaryCons.cs
 Program.cs
 

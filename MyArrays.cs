@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 class MyArrays
 {
-    static public async Task AllArrays()
+    static public void AllArrays()
     {
         string[] cars = ["Volvo"];
         int[] scores = [12, 2, 3, 90, 102, 34, 78, 24, 98];

@@ -8,13 +8,13 @@ enum Level
 
 abstract class Animal
 {
-  // Abstract method (does not have a body)
-  public abstract void animalSound();
-  // Regular method
-  public void sleep()
-  {
-    Console.WriteLine("Zzz");
-  }
+    // Abstract method (does not have a body)
+    public abstract void animalSound();
+    // Regular method
+    public void sleep()
+    {
+        Console.WriteLine("Zzz");
+    }
 }
 
 interface IBird
@@ -22,7 +22,7 @@ interface IBird
     void eat();
 }
 
-class Peacock : Animal, IBird 
+class Peacock : Animal, IBird
 {
     public override void animalSound()
     {
@@ -33,6 +33,6 @@ class Peacock : Animal, IBird
     {
         var birdLevel = Level.LOW;
         System.Console.WriteLine("Peacock is eating");
-        System.Console.WriteLine((int) birdLevel);
+        System.Console.WriteLine((int)birdLevel);
     }
 }
