@@ -6,11 +6,13 @@ class Program
 {
     public static void Main()
     {
-    // Dog myDog = new();
-    // myDog.Speak();
-    // MyApp2.OOPs.Polymorphism.Animal myDog = new Dog();
-    // myDog.Speak();
-    // DataTypeMethods.Run();
-    ListDataStructures.Run();
+        // Dog myDog = new();
+        // myDog.Speak();
+        // MyApp2.OOPs.Polymorphism.Animal myDog = new Dog();
+        // myDog.Speak();
+        // DataTypeMethods.Run();
+        // ListDataStructures.Run();
+        // DictionaryDS.Run();
+        ExceptionalHandling.Run();
     }
 }

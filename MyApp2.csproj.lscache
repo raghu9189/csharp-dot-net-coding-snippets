@@ -57,6 +57,8 @@ TemporaryDependencyNodeTargetIdentifier=net10.0
 Basics/
  DataTypeMethods.cs
  Datatypes.cs
+ DictionaryDS.cs
+ ExceptionalHandling.cs
  ListDataStructures.cs
 Bird.cs
 MyArrays.cs
