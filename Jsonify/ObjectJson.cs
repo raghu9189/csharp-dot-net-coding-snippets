@@ -2,14 +2,6 @@
 
 namespace MyApp2.Jsonify;
 
-public class Product
-{
-    public string? Name {get; set;}
-    public double? Price {get; set;}
-    public string? Brand {get; set;}
-
-}
-
 public class ObjectJson
 {
     public static void Run()
