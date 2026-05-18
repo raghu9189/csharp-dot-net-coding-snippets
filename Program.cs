@@ -14,14 +14,15 @@ class Program
         // MyApp2.OOPs.Polymorphism.Animal myDog = new Dog();
         // myDog.Speak();
         // DataTypeMethods.Run();
-        // ListDataStructures.Run();
+        ListDataStructures.Run();
         // DictionaryDS.Run();
         // ExceptionalHandling.Run( );
         // ObjectJson.Run();
         // HttpRequests.Run();
         // Delegates.Run();
         // GenericTypes.Run();
-        Multithreading02.Run();
+        // Multithreading02.Run();
+        // HashSetDs.Run();
     }
 
     // public static async Task Main()

@@ -24,6 +24,10 @@ class ListDataStructures
         scores.AddRange(partialScores);
         scores.AddRange([90]);
 
+        bool isAvailable = scores.Contains(35);
+
+        System.Console.WriteLine("Check availability: " + isAvailable);
+
         System.Console.WriteLine("after adding");
         PrintList(scores);
        
@@ -33,7 +37,10 @@ class ListDataStructures
         
         PrintList(scores);
 
-
+        var myNums = new List<int>(){1 ,2, 3, 4};
+        System.Console.WriteLine("Size: " + myNums.Count + " Capacity: " + myNums.Capacity);
+        myNums.Clear();
+        System.Console.WriteLine("Size: " + myNums.Count  + " Capacity: " + myNums.Capacity);
 
     }
 }
