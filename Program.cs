@@ -2,6 +2,7 @@
 using MyApp2;
 using MyApp2.Basics;
 using MyApp2.Jsonify;
+using MyApp2.LINQ;
 using MyApp2.Multithreading;
 using MyApp2.OOPs.Polymorphism;
 
@@ -9,6 +10,26 @@ class Program
 {
     public static void Main()
     {
+       
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         // Dog myDog = new();
         // myDog.Speak();
         // MyApp2.OOPs.Polymorphism.Animal myDog = new Dog();
@@ -23,11 +44,37 @@ class Program
         // GenericTypes.Run();
         // Multithreading02.Run();
         // HashSetDs.Run();
-        RecordDs.Run();
+        // RecordDs.Run();
+        // StructDs.Run();
+        // Linq01.Run();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
     // public static async Task Main()
     // {
     //     await HttpRequests.Run();
     // }
+
+    
+
+
+
+
+
+
+
+
 }
