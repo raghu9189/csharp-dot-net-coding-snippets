@@ -10,26 +10,7 @@ class Program
 {
     public static void Main()
     {
-       
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        DataTypesInDepth.Run();
         // Dog myDog = new();
         // myDog.Speak();
         // MyApp2.OOPs.Polymorphism.Animal myDog = new Dog();
@@ -47,34 +28,10 @@ class Program
         // RecordDs.Run();
         // StructDs.Run();
         // Linq01.Run();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
     // public static async Task Main()
     // {
     //     await HttpRequests.Run();
     // }
-
-    
-
-
-
-
-
-
-
-
 }
