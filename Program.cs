@@ -1,6 +1,7 @@
 ﻿using System;
 using MyApp2;
 using MyApp2.Basics;
+using MyApp2.DesignPatterns;
 using MyApp2.Jsonify;
 using MyApp2.LINQ;
 using MyApp2.Multithreading;
@@ -32,7 +33,8 @@ class Program
         // DataTypesInDepth.Run();
         // StringOperations.Run();
         // ReferenceExcercise.Run();
-        MathMethods.Run();
+        // MathMethods.Run();
+        ImmutableBuilderPattern.Run();
     }
 
     // public static async Task Main()

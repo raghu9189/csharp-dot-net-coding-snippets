@@ -42,6 +42,9 @@ namespace MyApp2.Basics
             // Integers
             byte byteValue = 2;
             short shortValue = 20;
+
+            // below Both are same
+            // System.Int32 serielNo = 20;
             int serielNo = 0;
             long longValue = 3444L;
 
