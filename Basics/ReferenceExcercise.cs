@@ -32,6 +32,16 @@ public class ReferenceExcercise
         {
             System.Console.WriteLine(item);
         }
+
+        // arrays implements IEnumerables
+        IEnumerable<int> evenNums = new int[] {1,2,3};
+        System.Console.WriteLine(evenNums.ElementAt(0));
+
+        System.Console.WriteLine($"My Fav day is {WeekDay.Saturday}");
+
+        // UUID
+        string myUniqueNum = new Guid().ToString("D");
+        System.Console.WriteLine(myUniqueNum);
         
     }
 }

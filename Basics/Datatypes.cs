@@ -23,6 +23,17 @@ namespace MyApp2.Basics
             _name = name;
         }
     }
+
+    public enum WeekDay
+    {
+        Monday = 0,
+        Tuesday = 1,
+        Wednesday = 2,
+        Thursay = 3,
+        Friday = 4,
+        Saturday = 5,
+        Sunday = 6
+    }
     class DataTypes
     {
         public static void Run()
@@ -132,6 +143,9 @@ namespace MyApp2.Basics
             if (citizen.Name is null) System.Console.WriteLine("Citizen is null");
             citizen.Name = "Peter Parker";
             System.Console.WriteLine(citizen.Name);
+            
+            System.Console.WriteLine(WeekDay.Saturday + 1);
+
 
         }
     }
