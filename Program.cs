@@ -11,8 +11,6 @@ class Program
 {
     public static void Main()
     {
-
-        
         // Dog myDog = new();
         // myDog.Speak();
         // MyApp2.OOPs.Polymorphism.Animal myDog = new Dog();
@@ -34,9 +32,10 @@ class Program
         // StringOperations.Run();
         // ReferenceExcercise.Run();
         // MathMethods.Run();
-        ImmutableBuilderPattern.Run();
+        // ImmutableBuilderPattern.Run();
+        // SingletonPattern.Run();
+        RepositoryPattern.Run();
     }
-
     // public static async Task Main()
     // {
     //     await HttpRequests.Run();

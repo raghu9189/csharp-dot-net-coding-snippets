@@ -40,7 +40,7 @@ public class ReferenceExcercise
         System.Console.WriteLine($"My Fav day is {WeekDay.Saturday}");
 
         // UUID
-        string myUniqueNum = new Guid().ToString("D");
+        string myUniqueNum = new Guid().ToString();
         System.Console.WriteLine(myUniqueNum);
         
     }
