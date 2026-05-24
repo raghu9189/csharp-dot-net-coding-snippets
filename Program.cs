@@ -31,7 +31,8 @@ class Program
         // Linq01.Run();
         // DataTypesInDepth.Run();
         // StringOperations.Run();
-        ReferenceExcercise.Run();
+        // ReferenceExcercise.Run();
+        MathMethods.Run();
     }
 
     // public static async Task Main()
