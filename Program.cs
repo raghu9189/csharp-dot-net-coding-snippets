@@ -34,7 +34,8 @@ class Program
         // MathMethods.Run();
         // ImmutableBuilderPattern.Run();
         // SingletonPattern.Run();
-        RepositoryPattern.Run();
+        // RepositoryPattern.Run();
+        FactoryPattern.Run();
     }
     // public static async Task Main()
     // {
