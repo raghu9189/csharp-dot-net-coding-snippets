@@ -1,6 +1,7 @@
 ﻿using System;
 using MyApp2;
 using MyApp2.Basics;
+using MyApp2.Collections;
 using MyApp2.DesignPatterns;
 using MyApp2.Jsonify;
 using MyApp2.LINQ;
@@ -30,12 +31,13 @@ class Program
         // Linq01.Run();
         // DataTypesInDepth.Run();
         // StringOperations.Run();
-        ReferenceExcercise.Run();
+        // ReferenceExcercise.Run();
         // MathMethods.Run();
         // ImmutableBuilderPattern.Run();
         // SingletonPattern.Run();
         // RepositoryPattern.Run();
         // FactoryPattern.Run();
+        TypesOfCollections.Run();
     }
     // public static async Task Main()
     // {
