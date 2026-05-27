@@ -30,12 +30,12 @@ class Program
         // Linq01.Run();
         // DataTypesInDepth.Run();
         // StringOperations.Run();
-        // ReferenceExcercise.Run();
+        ReferenceExcercise.Run();
         // MathMethods.Run();
         // ImmutableBuilderPattern.Run();
         // SingletonPattern.Run();
         // RepositoryPattern.Run();
-        FactoryPattern.Run();
+        // FactoryPattern.Run();
     }
     // public static async Task Main()
     // {

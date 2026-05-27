@@ -42,6 +42,15 @@ public class ReferenceExcercise
         // UUID
         string myUniqueNum = new Guid().ToString();
         System.Console.WriteLine(myUniqueNum);
-        
+
+        // Object reference equality check
+
+        string name1 = "Raghu";
+        string name2 = "Raghu";
+
+        System.Console.WriteLine(name1 == name2);
+        System.Console.WriteLine(object.ReferenceEquals(name1, name2));
+
+
     }
 }
