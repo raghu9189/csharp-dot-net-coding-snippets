@@ -37,7 +37,12 @@ class Program
         // SingletonPattern.Run();
         // RepositoryPattern.Run();
         // FactoryPattern.Run();
-        TypesOfCollections.Run();
+        // TypesOfCollections.Run();
+        // TypesOfCollections2.Run();
+        // TypesOfCollections3.Run();
+        MyGenericClass.Run();
+
+
     }
     // public static async Task Main()
     // {
