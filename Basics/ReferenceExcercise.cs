@@ -37,7 +37,9 @@ public class ReferenceExcercise
     
     static void GlobalUniqueIdentifierExampleGUIDorUUID()
     {
-        
+        var guid = Guid.NewGuid();
+
+        System.Console.WriteLine($"New GUID: {guid}");
     }
     public static void Run()
     {
@@ -89,6 +91,7 @@ public class ReferenceExcercise
         System.Console.WriteLine(object.ReferenceEquals(name1, name2));
 
         StringEqualityTypes();
+        GlobalUniqueIdentifierExampleGUIDorUUID();
 
     }
 }
