@@ -2,6 +2,43 @@ namespace MyApp2.Basics;
 
 public class ReferenceExcercise
 {
+
+    static void StringEqualityTypes()
+    {
+        string a = "hello";
+        string b = "hello";
+        string c = new string("hello".ToCharArray());
+
+        // == 
+        /* 
+            1. for string, compares content
+            2. overload operator
+            3. Not normal reference operator
+        */
+        System.Console.WriteLine($" a == b {a == b}"); // true
+        System.Console.WriteLine($" a == c {a == c}"); // true
+
+        // .Equals()
+        /* 
+            1. compares content
+            2. case sensitivity by default
+        */
+         System.Console.Write("Equals() ");
+        System.Console.WriteLine(a.Equals(b, StringComparison.OrdinalIgnoreCase)); // true
+
+        // ReferenceEquals()
+        /* 
+            1. Check actual memory reference
+            2. Returns only true if both objects pointing to the same object
+        */
+         System.Console.Write("ReferenceEquals() ");
+        System.Console.WriteLine(object.ReferenceEquals(a, c)); // false
+    }
+    
+    static void GlobalUniqueIdentifierExampleGUIDorUUID()
+    {
+        
+    }
     public static void Run()
     {
         int[] sourceArray = new int[5] {1, 2, 3, 4, 5};
@@ -51,6 +88,7 @@ public class ReferenceExcercise
         System.Console.WriteLine(name1 == name2);
         System.Console.WriteLine(object.ReferenceEquals(name1, name2));
 
+        StringEqualityTypes();
 
     }
 }

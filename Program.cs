@@ -31,7 +31,7 @@ class Program
         // Linq01.Run();
         // DataTypesInDepth.Run();
         // StringOperations.Run();
-        // ReferenceExcercise.Run();
+        ReferenceExcercise.Run();
         // MathMethods.Run();
         // ImmutableBuilderPattern.Run();
         // SingletonPattern.Run();
@@ -40,7 +40,7 @@ class Program
         // TypesOfCollections.Run();
         // TypesOfCollections2.Run();
         // TypesOfCollections3.Run();
-        MyGenericClass.Run();
+        // MyGenericClass.Run();
 
 
     }
