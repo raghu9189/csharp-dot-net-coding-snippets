@@ -20,7 +20,7 @@ class Bike : IVehicle
         System.Console.WriteLine("Bike is driving!");
     }
 }
-
+#nullable disable
 class VehicleFactory
 {
     public IVehicle GetVehicle(string type)

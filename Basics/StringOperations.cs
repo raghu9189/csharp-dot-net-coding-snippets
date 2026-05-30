@@ -1,13 +1,14 @@
 using System.Text;
 
 namespace MyApp2.Basics;
-
+#nullable disable
 public class MyUser
 {
     public string Name { get; set; }
     public int Id { get; set; }
 }
 
+#nullable disable
 public class StringOperations
 {
     public static void Run()

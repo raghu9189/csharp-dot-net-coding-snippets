@@ -38,7 +38,6 @@ public class ReferenceExcercise
     static void GlobalUniqueIdentifierExampleGUIDorUUID()
     {
         var guid = Guid.NewGuid();
-
         System.Console.WriteLine($"New GUID: {guid}");
     }
     public static void Run()

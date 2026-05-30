@@ -5,6 +5,8 @@ using System.Collections.Immutable;
 using System.Text.Json;
 
 namespace MyApp2.Collections;
+
+#nullable disable
 public static class TypesOfCollections2
 {
     public static void Run()
@@ -41,9 +43,5 @@ public static class TypesOfCollections2
         myStack.Clear();
 
         System.Console.WriteLine(JsonSerializer.Serialize(myStack.ToArray()));
-
-        
-
-
     }
 }

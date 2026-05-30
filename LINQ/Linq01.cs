@@ -2,6 +2,7 @@ using System.Text.Json;
 
 namespace MyApp2.LINQ;
 
+#nullable disable
 public class Employee
 {
     public int Id { get; set; }

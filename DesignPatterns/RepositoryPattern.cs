@@ -1,6 +1,7 @@
 namespace MyApp2.DesignPatterns;
 
 // User Entity
+#nullable disable
 public class User
 {
     public int Id {get; set;}
@@ -8,7 +9,7 @@ public class User
 }
 
 // User Repository Interface
-
+#nullable disable
 public interface IUserRepository
 {
     List<User> GetAll();
