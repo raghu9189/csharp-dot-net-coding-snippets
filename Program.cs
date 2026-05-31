@@ -7,8 +7,19 @@ using MyApp2.Jsonify;
 using MyApp2.LINQ;
 using MyApp2.Multithreading;
 using MyApp2.OOPs.Polymorphism;
+using MyApp2.PerformanceTest;
+using System.Reflection;
+using BenchmarkDotNet;
+using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Running;
+using MyApp2.Versions.Twelve;
 
-class Program
+
+// BenchmarkSwitcher
+//     .FromAssembly(Assembly.GetExecutingAssembly())
+//     .Run(args);
+
+partial class Program
 {
     public static void Main()
     {
@@ -31,7 +42,7 @@ class Program
         // Linq01.Run();
         // DataTypesInDepth.Run();
         // StringOperations.Run();
-        ReferenceExcercise.Run();
+        // ReferenceExcercise.Run();
         // MathMethods.Run();
         // ImmutableBuilderPattern.Run();
         // SingletonPattern.Run();
@@ -41,7 +52,8 @@ class Program
         // TypesOfCollections2.Run();
         // TypesOfCollections3.Run();
         // MyGenericClass.Run();
-
+        // BenchmarkRunner.Run<ListBenchmark>();
+        Csharp12.Run();
 
     }
     // public static async Task Main()
