@@ -19,6 +19,8 @@ using MyApp2.Versions.Twelve;
 //     .FromAssembly(Assembly.GetExecutingAssembly())
 //     .Run(args);
 
+
+
 partial class Program
 {
     public static void Main()
