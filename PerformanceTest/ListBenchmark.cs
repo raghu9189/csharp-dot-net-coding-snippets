@@ -1,12 +1,11 @@
-using BenchmarkDotNet.Attributes;
+
 
 namespace MyApp2.PerformanceTest;
 
-using BenchmarkDotNet.Attributes;
 
 public class ListBenchmark
 {
-    [Benchmark]
+
     public void ListAdd()
     {
         var list = new List<int>();
@@ -14,7 +13,7 @@ public class ListBenchmark
             list.Add(i);
     }
 
-    [Benchmark]
+
     public void ArrayFill()
     {
         var arr = new int[10000];

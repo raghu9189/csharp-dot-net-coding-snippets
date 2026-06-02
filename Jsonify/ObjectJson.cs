@@ -2,11 +2,18 @@
 
 namespace MyApp2.Jsonify;
 
+file class Product
+{
+    public string? Name {get; set;}
+    public double? Price {get; set;}
+    public string? Brand {get; set;}
+
+}
+
 public class ObjectJson
 {
     public static void Run()
     {
-        
         Product product1 = new()
         {
           Name = "Gemini Tea Podwer",

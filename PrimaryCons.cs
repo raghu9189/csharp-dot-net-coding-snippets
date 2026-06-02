@@ -1,3 +1,4 @@
+// Primary constructor Introduced in c# 12
 class Employee(string name)
 {
     public string Name { get; set; } = name;

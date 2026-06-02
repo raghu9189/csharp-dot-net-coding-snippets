@@ -9,9 +9,6 @@ using MyApp2.Multithreading;
 using MyApp2.OOPs.Polymorphism;
 using MyApp2.PerformanceTest;
 using System.Reflection;
-using BenchmarkDotNet;
-using BenchmarkDotNet.Attributes;
-using BenchmarkDotNet.Running;
 using MyApp2.Versions.Twelve;
 
 
