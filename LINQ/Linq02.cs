@@ -13,10 +13,23 @@ file class Employee
     public bool IsActive { get; set; }
 }
 
+file class Project
+{
+    public int Id { get; set; }
+    public string Name { get; set; } = "";
+    public int EmployeeId { get; set; }
+}
+
 public class Linq02
 {
     public static void Run()
     {
+        List<Project> projects = new ()
+        {
+            new() { Id = 101, Name = "Banking App", EmployeeId = 1 },
+            new() { Id = 102, Name = "E-Commerce", EmployeeId = 1 },
+            new() { Id = 103, Name = "CRM System", EmployeeId = 2 }
+        };
         List<Employee> employees = new()
         {
             new Employee { Id = 1, Name = "Raghu", Department = "IT", Age = 25, Salary = 60000, IsActive = true },
@@ -28,6 +41,7 @@ public class Linq02
             new Employee { Id = 7, Name = "Sara", Department = "Finance", Age = 31, Salary = 82000, IsActive = true },
             new Employee { Id = 8, Name = "Karan", Department = "IT", Age = 27, Salary = 67000, IsActive = true }
         };
+
         // First()
         // var employee = employees.First(e => e.Id == 1);
         // System.Console.WriteLine(JsonSerializer.Serialize<Employee>(employee));
@@ -35,8 +49,8 @@ public class Linq02
 
         // FirstOrDefault()
 
-        var employee2 =employees.FirstOrDefault(e => e.Department == "ITO");
-        System.Console.WriteLine(JsonSerializer.Serialize<Employee>(employee2));
+        // var employee2 =employees.FirstOrDefault(e => e.Department == "ITO");
+        // System.Console.WriteLine(JsonSerializer.Serialize<Employee>(employee2));
         // Returns default value.
         // Reference type:
             // null  
@@ -52,6 +66,53 @@ public class Linq02
         // SingleOrDefault
         // var emp2 = employees.SingleOrDefault<Employee>(e => e.Id == 200);
         // System.Console.WriteLine(JsonSerializer.Serialize<Employee>(emp2));
+
+        // Get employee count per department
+        // var empCountPerDept = employees
+        //                         .GroupBy(k => k.Department)
+        //                         // .Where(g => g.Count() > 2)
+        //                         .Select(e => new
+        //                         {
+        //                             Department = e.Key,
+        //                             EmployeeCount = e.Count()
+        //                         });
+        // foreach (var item in empCountPerDept)
+        // {
+        //     System.Console.WriteLine($"{item.Department} : {item.EmployeeCount}");
+        // }
+
+        // Group employees by salary range
+        // var empGroupBySalary = employees.
+        //                             GroupBy(k =>
+        //                             {
+        //                                 if (k.Salary < 50_000) return "LOW";
+        //                                 if (k.Salary < 70_000) return "MEDIUM";
+        //                                 return "HIGH";
+        //                             })
+        //                             .Select(g => new
+        //                             {
+        //                                 SalaryRange = g.Key,
+        //                                 EmployeNames = g.Select(e => e.Name).ToList()
+        //                             }).ToDictionary(x => x.SalaryRange, x => x.EmployeNames);
+
+        //     System.Console.WriteLine(JsonSerializer.Serialize(empGroupBySalary));
+
+        // INNER JOIN
+        var EmpWithProjects = employees
+            .Join(
+                projects,
+                e => e.Id,
+                p => p.EmployeeId,
+                (e, p) => new
+                {
+                    EmployeeName = e.Name,
+                    ProjectName = p.Name
+                }
+            );
+        foreach (var item in EmpWithProjects)
+        {
+            System.Console.WriteLine($"{item.EmployeeName}: {item.ProjectName}");
+        }
     }
 }
 
