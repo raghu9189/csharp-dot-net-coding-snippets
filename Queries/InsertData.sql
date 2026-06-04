@@ -1,4 +1,3 @@
-USE MyApp;
 
 -- SELECT * FROM [User];
 -- INSERT INTO Employees (Id, Name, Salary)
@@ -9,3 +8,5 @@ USE MyApp;
 --     (2, 'Ram', 60000.00),
 --     (3, 'Sita', 70000.00),
 --     (4, 'Krishna', 80000.00);
+
+SELECT * FROM EmployeeView;

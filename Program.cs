@@ -52,7 +52,9 @@ partial class Program
         // TypesOfCollections3.Run();
         // MyGenericClass.Run();
         // BenchmarkRunner.Run<ListBenchmark>();
-        Csharp12.Run();
+        // Csharp12.Run();
+        // Practice01.Run();
+        Linq02.Run();
 
     }
     // public static async Task Main()

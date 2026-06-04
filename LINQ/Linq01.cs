@@ -46,7 +46,7 @@ public class Linq01
         // }
 
         // 3. Get only employee names
-        // var empOnlyNames = employees.Select((emp)=>emp.Name);
+        var empOnlyNames = employees.Select((emp)=>emp.Name);
         // foreach (var name in empOnlyNames)
         // {
         //     System.Console.WriteLine(name);
