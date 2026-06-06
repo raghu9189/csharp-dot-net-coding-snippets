@@ -98,21 +98,22 @@ public class Linq02
         //     System.Console.WriteLine(JsonSerializer.Serialize(empGroupBySalary));
 
         // INNER JOIN
-        var EmpWithProjects = employees
-            .Join(
-                projects,
-                e => e.Id,
-                p => p.EmployeeId,
-                (e, p) => new
-                {
-                    EmployeeName = e.Name,
-                    ProjectName = p.Name
-                }
-            );
-        foreach (var item in EmpWithProjects)
-        {
-            System.Console.WriteLine($"{item.EmployeeName}: {item.ProjectName}");
-        }
+        // var EmpWithProjects = employees
+        //     .Join(
+        //         projects,
+        //         e => e.Id,
+        //         p => p.EmployeeId,
+        //         (e, p) => new
+        //         {
+        //             EmployeeName = e.Name,
+        //             ProjectName = p.Name
+        //         }
+        //     );
+        // foreach (var item in EmpWithProjects)
+        // {
+        //     System.Console.WriteLine($"{item.EmployeeName}: {item.ProjectName}");
+        // }
+
     }
 }
 
